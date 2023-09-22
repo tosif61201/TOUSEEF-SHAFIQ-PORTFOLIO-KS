@@ -32,6 +32,13 @@ ul {
 li {
   float: left;
   margin: 5px 15px;
+  font-size: 20px;
+  padding: 5px;
+}
+
+li:hover {
+  background-color: rgb(82, 82, 117);
+  border-radius: 5px;
 }
 
 a {
@@ -41,7 +48,11 @@ a {
 .nav-bar {
   display: flex;
   background-color: brown;
-  justify-content: end;
+  justify-content: flex-end;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .welcome-section {
@@ -59,4 +70,61 @@ a {
   font-weight: 200;
   font-style: italic;
   color: red;
+}
+
+.contect-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 80vh;
+  padding: 0 2rem;
+  background-color: rgb(65, 59, 59);
+  color: beige;
+}
+
+.contect-header > h2 {
+  font-size: 6rem;
+}
+
+.contect-header > p {
+  font-style: italic;
+}
+
+.contect-list {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  max-width: 980px;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+}
+
+.button-contect-details {
+  font-size: 1.4rem;
+  text-shadow: 2px 2px 1px #1f1f1f;
+  transition: transform 0.3s ease-out;
+}
+
+.button-contect-details:hover {
+  transform: translateY(8px);
+}
+
+footer {
+  font-weight: 300;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+  background-color: rgb(65, 59, 59);
+  border-top: 4px solid brown;
+}
+
+footer > p {
+  margin: 2rem;
+}
+
+footer i {
+  vertical-align: middle;
 }
